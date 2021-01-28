@@ -1,5 +1,6 @@
 package org.exception.com;
 
+
 public class TaskAritmeticException {
 
 	public static void main(String[] args) {

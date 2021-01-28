@@ -7,9 +7,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		ArrayList<Client> ar = new ArrayList<Client>();
-		ar.add(new Client(111, "bbbb", "london"));
-        ar.add(new Client(131, "aaaa", "nyc"));
-        ar.add(new Client(121, "cccc", "jaipur"));
+		ar.add(new Client(20, "Anu", "london"));
+        ar.add(new Client(30, "Sam", "Chennai"));
+        ar.add(new Client(40, "Banu", "jaipur"));
         
         System.out.println("UnSorted");
         for (int i=0; i<ar.size(); i++)
@@ -17,7 +17,7 @@ public class Main {
         
         Collections.sort(ar,new SortedById());
         
-        System.out.println("\nSorted by rollno");
+        System.out.println("\nSorted by id: ");
         for (int i=0; i<ar.size(); i++)
             System.out.println(ar.get(i));Collections.sort(ar, new SortedByName());
             
